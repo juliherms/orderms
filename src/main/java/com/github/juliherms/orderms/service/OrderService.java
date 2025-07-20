@@ -50,7 +50,7 @@ public class OrderService {
 
         var entity = new OrderEntity();
         entity.setOrderId(event.codigoPedido());
-        entity.setCustomerId(event.codigoPedido());
+        entity.setCustomerId(event.codigoCliente());
         entity.setItems(getOrderItems(event));
         entity.setTotal(getTotal(event));
 
